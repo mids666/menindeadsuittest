@@ -74,22 +74,20 @@
 <div id="contact-form">
 
 
-    <div id="form" class="opacity-contact">
-
-            <form  id ="myForm" action="#">
-              <div class="input-line">
-                <input id="name" type="text" placeholder="NAME" class="input-same-line" required>
-                <input id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
-              </div>
-              <div class="input-line-column">
-                <input id="subject" type="text" placeholder="SUBJECT" required>
-                <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
-              </div>
-             <button type="submit" class="hover">Send</button>
-             <div id="message">INVALID EMAIL</div>
-            </form>
-          
+   <div id="form" class="opacity-contact">
+  <form id="myForm" action="https://app.formbricks.com/api/forms/cmdtyvmiwb6y9ud010frxii8z/submit" method="POST">
+    <div class="input-line">
+      <input name="name" id="name" type="text" placeholder="NAME" class="input-same-line" required>
+      <input name="email" id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
     </div>
+    <div class="input-line-column">
+      <input name="subject" id="subject" type="text" placeholder="SUBJECT" required>
+      <textarea name="message" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
+    </div>
+    <button type="submit" class="hover">Send</button>
+    <div id="message">INVALID EMAIL</div>
+  </form>
+</div>
 </div>
 
 <!-- CONTACT FORM -->
