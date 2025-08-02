@@ -218,5 +218,50 @@
         <script src="js/pace.js"></script>
         <script src="js/index.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const submitBtn = document.getElementById('submit');
+    const emailInput = document.getElementById('email');
+    const nameInput = document.getElementById('name');
+    const subjectInput = document.getElementById('subject');
+    const bodyInput = document.getElementById('body');
+    const messageDiv = document.getElementById('message');
+
+    submitBtn.addEventListener('click', () => {
+        const email = emailInput.value.trim();
+        const name = nameInput.value.trim();
+        const subject = subjectInput.value.trim();
+        const body = bodyInput.value.trim();
+
+        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (!name || !email || !subject || !body) {
+            messageDiv.style.display = 'block';
+            messageDiv.style.color = 'red';
+            messageDiv.textContent = 'Please fill in all fields.';
+            return;
+        }
+
+        if (!isValidEmail) {
+            messageDiv.style.display = 'block';
+            messageDiv.style.color = 'red';
+            messageDiv.textContent = 'INVALID EMAIL';
+            return;
+        }
+
+        // Show success message
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'green';
+        messageDiv.textContent = 'Message sent successfully!';
+
+        // Clear form (optional)
+        nameInput.value = '';
+        emailInput.value = '';
+        subjectInput.value = '';
+        bodyInput.value = '';
+    });
+});
+</script>
+
 </body>
 </html>
