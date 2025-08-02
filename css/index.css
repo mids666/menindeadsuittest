@@ -1024,25 +1024,16 @@ BLOG ONE
 ====================================*/
 
 #blog-one{
-    background:url(../images/blog-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: auto;
     min-height: 100vh;
-    position: relative;
     width: 100%;
     overflow: hidden;
+    background: url(../images/music-bg.jpg); 
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
 }
-#blog-one::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background:rgb(0,0,0,.2);
-}
+
 
 #blog-one .blog-one-heading{
     position: relative;
@@ -1370,7 +1361,7 @@ BLOG-SINGLE-ONE
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(../images/aboutbg.jpg);/*SONGS-ONE BACKGROUND IMAGE*/
+    background: url(../images/blog-bg.jpg);/*SONGS-ONE BACKGROUND IMAGE*/
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
