@@ -1307,6 +1307,16 @@ CONTACT ONE
    animation: rotate 20s linear infinite;
    position: relative;
 }
+
+#rotated {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fonts-loaded #rotated {
+  opacity: 1;
+}
+
 #contact-one #collaboration-mail .mail{
    
     color: white;

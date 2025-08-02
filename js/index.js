@@ -316,13 +316,10 @@ $(".navigation-content ul li a").hover(function(e) {
           
     
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Wait until all fonts are loaded
-    document.fonts.ready.then(() => {
-      new CircleType(document.getElementById("rotated")).radius(85);
-    });
-  });
-
+  document.fonts.ready.then(() => {
+  document.body.classList.add("fonts-loaded");
+  new CircleType(document.getElementById("rotated")).radius(85);
+});
 
 
 
