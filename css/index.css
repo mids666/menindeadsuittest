@@ -1715,16 +1715,6 @@ ABOUT-ONE
 /*====================================
 SONGS ONE
 ====================================*/
-#songs-one{
-    height: auto;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background: url(../images/music-bg.JPG);
-     background-position: center;
-     background-attachment: fixed;
-     background-size: cover;
-}
 
 
 
