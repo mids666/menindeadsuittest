@@ -905,7 +905,7 @@ SONGS ONE
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(../images/aboutbg.jpg);/*SONGS-ONE BACKGROUND IMAGE*/
+    background: url(../images/music-bg.jpg);/*SONGS-ONE BACKGROUND IMAGE*/
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
@@ -1024,7 +1024,7 @@ BLOG ONE
 ====================================*/
 
 #blog-one{
-    background:url(../images/aboutbg.jpg);
+    background:url(../images/blog-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
