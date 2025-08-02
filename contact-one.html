@@ -39,7 +39,7 @@
   <!-- NAVIGATION -->
   <div class="navigation">
     <div class="logo hover ">
-       <a href="index.html" class="text">MEN IN DEAD SUIT</a>
+       <a href="index-two.html" class="text">MEN IN DEAD SUIT</a>
     </div>
     <div class="menu-bar hover ">
         <div class="menu-bar-name text">
@@ -85,7 +85,7 @@
                 <input id="subject" type="text" placeholder="SUBJECT" required>
                 <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
               </div>
-             <button type="button" id="submit" class="hover">Send</button>
+             <button type="submit" class="hover">Send</button>
              <div id="message">INVALID EMAIL</div>
             </form>
           
@@ -148,11 +148,11 @@
             <a href="#" class="text">MEN IN DEAD SUIT</a>
          </div>
         <ul class="navigation-ul">
-           <li><a href="index.html" data-text="HOME" data-img="images/bg-image-three.jpg">HOME</a></li>
-            <li><a href="about-one.html"  data-text="ABOUT"  data-img="images/about-img.jpg">ABOUT</a></li>
-            <li><a href="songs-one.html" data-text="RELEASES"  data-img="images/album-thumbnail-nine.jpg">RELEASES</a></li>
-            <li><a href="blog-one.html"  data-text="NEWS" data-img="images/main-bg-three.jpg">NEWS</a></li>
-            <li><a href="contact-one.html"  data-text="CONTACT" data-img="images/album-thumbnail-four.jpg">CONTACT</a></li>
+            <li><a href="index-one.html" data-text="Home" data-img="images/bg-image-three.jpg">Home</a></li>
+            <li><a href="about-one.html"  data-text="About"  data-img="images/about-img.jpg">About</a></li>
+            <li><a href="songs-one.html" data-text="Releases"  data-img="images/album-thumbnail-nine.jpg">Releases</a></li>
+            <li><a href="blog-one.html"  data-text="News" data-img="images/main-bg-three.jpg">News</a></li>
+            <li><a href="contact-one.html"  data-text="Contact" data-img="images/album-thumbnail-four.jpg">Contact</a></li>
         </ul>
         <div class="navigation-close hover about-close opacity">
             <div class="navigation-close-line"></div>
@@ -217,51 +217,6 @@
         <script src="js/bez.js"></script>
         <script src="js/pace.js"></script>
         <script src="js/index.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const submitBtn = document.getElementById('submit');
-    const emailInput = document.getElementById('email');
-    const nameInput = document.getElementById('name');
-    const subjectInput = document.getElementById('subject');
-    const bodyInput = document.getElementById('body');
-    const messageDiv = document.getElementById('message');
-
-    submitBtn.addEventListener('click', () => {
-        const email = emailInput.value.trim();
-        const name = nameInput.value.trim();
-        const subject = subjectInput.value.trim();
-        const body = bodyInput.value.trim();
-
-        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-        if (!name || !email || !subject || !body) {
-            messageDiv.style.display = 'block';
-            messageDiv.style.color = 'red';
-            messageDiv.textContent = 'Please fill in all fields.';
-            return;
-        }
-
-        if (!isValidEmail) {
-            messageDiv.style.display = 'block';
-            messageDiv.style.color = 'red';
-            messageDiv.textContent = 'INVALID EMAIL';
-            return;
-        }
-
-        // Show success message
-        messageDiv.style.display = 'block';
-        messageDiv.style.color = 'green';
-        messageDiv.textContent = 'Message sent successfully!';
-
-        // Clear form (optional)
-        nameInput.value = '';
-        emailInput.value = '';
-        subjectInput.value = '';
-        bodyInput.value = '';
-    });
-});
-</script>
 
 </body>
 </html>
