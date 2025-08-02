@@ -316,11 +316,12 @@ $(".navigation-content ul li a").hover(function(e) {
           
     
 
-  document.fonts.ready.then(() => {
-  document.body.classList.add("fonts-loaded");
-  new CircleType(document.getElementById("rotated")).radius(85);
-});
-
+  if(document.querySelector('#rotated')){
+            $(function(){
+                var circleType = new CircleType(document.getElementById('rotated')).radius(0);
+            })
+          }
+    
 
 
 
