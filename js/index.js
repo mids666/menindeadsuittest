@@ -313,12 +313,15 @@ $(".navigation-content ul li a").hover(function(e) {
 
 
           //CIRCLE EFFECT ON CONTACT PAGE
-          if(document.querySelector('#rotated')){
-            $(function(){
-                var circleType = new CircleType(document.getElementById('rotated')).radius(0);
-            })
-          }
+          
     
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Wait until all fonts are loaded
+    document.fonts.ready.then(() => {
+      new CircleType(document.getElementById("rotated")).radius(85);
+    });
+  });
 
 
 
