@@ -172,7 +172,7 @@ body, html {
 }
 
 /* Show mobile video and hide desktop video on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .desktop-video {
     display: none;
   }
