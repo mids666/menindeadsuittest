@@ -1206,7 +1206,7 @@ CONTACT ONE
      background-size: cover;
 }
 
-#contact-one #contact-form{
+#contact-one #contact-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1284,12 +1284,6 @@ CONTACT ONE
     transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#message {
-    display: none;
-    margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-}
 
 #contact-one #form button:hover::after{
     top: 0%;
@@ -1307,16 +1301,6 @@ CONTACT ONE
    animation: rotate 20s linear infinite;
    position: relative;
 }
-
-#rotated {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-body.fonts-loaded #rotated {
-  opacity: 1;
-}
-
 #contact-one #collaboration-mail .mail{
    
     color: white;
